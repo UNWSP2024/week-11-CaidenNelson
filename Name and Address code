@@ -1,0 +1,25 @@
+#Programmer = Caiden
+#Date = 11.15.24
+#Title = Name and Address
+
+
+import tkinter
+import tkinter.messagebox
+
+class PersonalInfoGUI:
+    def __init__(self):
+        self.main_window = tkinter.Tk()
+
+        self.info_button = tkinter.Button(self.main_window, text = 'Info',  command = self.display_info, relief = 'raised')
+
+        self.quit_button = tkinter.Button(self.main_window, text = 'Quit', command = self.main_window.destroy, relief = 'sunken')
+
+        self.info_button.pack()
+        self.quit_button.pack()
+        tkinter.mainloop()
+
+    def display_info(self):
+        tkinter.messagebox.showinfo('Personal Info','Caiden, Big Lake Township')
+
+
+gui = PersonalInfoGUI()
