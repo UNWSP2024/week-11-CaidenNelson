@@ -1,0 +1,20 @@
+#Programmer = Caiden
+#Date = 11.15.24
+#Title = Saying
+
+
+import tkinter
+
+
+
+class MyGUI:
+    def __init__(self):
+
+        self.main_window = tkinter.Tk()
+
+
+        self.label = tkinter.Label(self.main_window, relief = 'raised', text = 'All that is gold does not glitter, Not all those who wander are lost;')
+        self.label.pack()
+
+        tkinter.mainloop()
+my_gui = MyGUI()
